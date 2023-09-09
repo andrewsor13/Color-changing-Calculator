@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="theme-section">
+      <h3 class="title">Calc</h3>
+      <form class="theme-form">
+        <p class="theme-form__title">Theme</p>
+        <div class="input-container">
+          <div class="theme-form__labels">
+            <label for="Theme">1</label>
+            <label for="Theme">2</label>
+            <label for="Theme">3</label>
+          </div>
+          <input class="theme-form__input" type="range" min="1" max="3" value="1">
+        </div>
+      </form>
+    </div>
+    <div class="result-section">
+      <div class="result">
+        <p class="result__text">0</p>
+      </div>
+    </div>
+    <div class="calculator-section">
+      <ul class="buttons">
+        <li class="buttons__item"><button class="digit" value="7">7</button></li>
+        <li class="buttons__item"><button class="digit" value="8">8</button></li>
+        <li class="buttons__item"><button class="digit" value="9">9</button></li>
+        <li class="buttons__item"><button class=" delete-reset" id="delete">DEL</button></li>
+        <li class="buttons__item"><button class="digit" value="4">4</button></li>
+        <li class="buttons__item"><button class="digit" value="5">5</button></li>
+        <li class="buttons__item"><button class="digit" value="6">6</button></li>
+        <li class="buttons__item"><button id="plus">+</button></li>
+        <li class="buttons__item"><button class="digit" value="1">1</button></li>
+        <li class="buttons__item"><button class="digit" value="2">2</button></li>
+        <li class="buttons__item"><button class="digit" value="3">3</button></li>
+        <li class="buttons__item"><button id="minus">-</button></li>
+        <li class="buttons__item"><button id="dot">.</button></li>
+        <li class="buttons__item"><button class="digit" value="0">0</button></li>
+        <li class="buttons__item"><button id="divide">/</button></li>
+        <li class="buttons__item"><button id="multiply">x</button></li>
+      </ul>
+      <div class="options">
+        <button class=" delete-reset" id="reset">RESET</button>
+        <button id="equal">=</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ciobanca Andrei-Sorin</a>.
+  </div>
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
